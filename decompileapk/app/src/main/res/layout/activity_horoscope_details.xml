@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="52dp" android:minHeight="?attr/actionBarSize">
+        <Button android:textColor="#ffffff" android:layout_gravity="start" android:background="@drawable/zodiac" android:layout_width="25dp" android:layout_height="25dp" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="end" android:id="@+id/next" android:background="@drawable/ic_baseline_arrow_back" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="15dp" android:rotation="180" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/hint_horoscope_details"/>
+    </Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:text="@string/hint_time_of_birth"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_time_of_birth" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:hint="" android:inputType="time"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="@string/hint_place_of_birth"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_place_of_birth" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="14dp" android:text="@string/hint_mangal"/>
+            <LinearLayout android:id="@+id/input_layout_phone" android:background="@drawable/green_round_border" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <Spinner android:entries="@array/yes_no" android:id="@+id/input_mangal" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/hint_height" android:inputType="text"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="@string/hint_kuldevak_gotra"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_kuldevak_gotra" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <Button android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:textColor="#ffffff" android:layout_gravity="start" android:id="@+id/back" android:background="@color/colorPrimary" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/hint_previous" android:drawableLeft="@drawable/ic_baseline_arrow_back"/>
+            <Button android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:textColor="#ffffff" android:layout_gravity="end" android:id="@+id/next2" android:background="@color/colorPrimary" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-48dp" android:text="@string/hint_next" android:drawableRight="@drawable/ic_baseline_arrow_forward"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:background="@drawable/error" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:layout_alignParentTop="true" android:layout_marginStart="15dp"/>
+    <TextView android:textSize="22sp" android:textStyle="bold" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Warning!" android:layout_alignParentTop="true" android:layout_marginStart="50dp"/>
+    <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="If you press ok, you can not able to download and share the PDF again." android:layout_below="@+id/text" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    <LinearLayout android:id="@+id/btnLL" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="20dp" android:layout_below="@+id/text1" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+        <Button android:textColor="#ffffff" android:id="@+id/cancelButton" android:background="@drawable/rounded_corner2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Cancel" android:layout_weight="1"/>
+        <Button android:textColor="#ffffff" android:id="@+id/okButton" android:background="@drawable/rounded_corner" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Ok" android:layout_weight="1" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

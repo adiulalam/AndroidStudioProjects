@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <me.relex.circleindicator.CircleIndicator android:layout_gravity="bottom" android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="48dp" android:layout_above="@+id/bottom_linear" app:ci_drawable="@drawable/orange_rect" app:ci_drawable_unselected="@drawable/light_orange_rect" app:ci_height="8dp" app:ci_width="5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_linear" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="#8f909e" android:id="@+id/txtskip" android:padding="15dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SKIP" android:layout_weight="1" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:fontFamily="@font/roboto_regular"/>
+        <TextView android:textColor="@color/txt_color" android:gravity="right" android:id="@+id/txtnext" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:layout_weight="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+</RelativeLayout>

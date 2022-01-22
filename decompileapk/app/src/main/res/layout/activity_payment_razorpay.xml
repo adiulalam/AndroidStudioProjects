@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#125688" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="100dp" android:layout_marginRight="20dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="110dp">
+                <LinearLayout android:gravity="center" android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="20sp" android:paddingTop="35dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name"/>
+                </LinearLayout>
+                <ImageView android:background="#ffffff" android:layout_width="60dp" android:layout_height="60dp" android:src="@mipmap/ic_launcher" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#f2f2f2" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#000" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="0dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="To Download PDF"/>
+                <TextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rs. 25/-"/>
+                <TextView android:textSize="12sp" android:textStyle="italic" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="5dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="For any problem in Transaction"/>
+                <TextView android:textSize="12sp" android:textStyle="italic" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="5dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please contact us \10@ 9875487213 / 8981021255"/>
+                <Button android:textSize="14sp" android:textColor="#fcfcfc" android:layout_gravity="center_horizontal" android:id="@+id/btn_pay" android:background="@drawable/green_button" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="Payment"/>
+            </LinearLayout>
+            <Button android:textSize="12sp" android:textStyle="italic" android:textColor="#a1ddee" android:id="@+id/backtopayment" android:background="@drawable/secured_by_bg" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Payment Secured by Razorpay"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</ScrollView>

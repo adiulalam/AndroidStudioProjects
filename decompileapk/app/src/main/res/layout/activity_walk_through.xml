@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/view_pager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layoutDots" android:layout_width="match_parent" android:layout_height="50dp" android:layout_above="@+id/txtnext"/>
+    <TextView android:textColor="#8f909e" android:id="@+id/txtskip" android:padding="15dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SKIP" android:layout_weight="1" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:fontFamily="@font/roboto_regular"/>
+    <TextView android:textColor="@color/txt_color" android:gravity="right" android:id="@+id/txtnext" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:layout_weight="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:fontFamily="@font/roboto_regular"/>
+</RelativeLayout>

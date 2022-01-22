@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="52dp" android:minHeight="?attr/actionBarSize">
+        <Button android:textColor="#ffffff" android:layout_gravity="start" android:background="@drawable/ic_baseline_card_giftcard_24" android:layout_width="25dp" android:layout_height="25dp" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="Fill Up and Generate"/>
+    </Toolbar>
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 1:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText01" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="You are cordially invited to bless Ayesha (D/o. Mr. Umar and Mrs. Sahida Khan) and Salman (S/o. Mr. Arbaz and Mrs. Tamim Ansar) on their wedding ceremony" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 2:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText02" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="Ayesha" android:inputType="text"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 3:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText03" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="Salman" android:inputType="text"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 4:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText04" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="Please accept this card as personal invitation" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 5:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText05" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="and join Us: on Sunday, 21 March 2018" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 6:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText06" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="Dinner Togethers" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 7:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText07" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="You are invited to be with us for great dinner on:" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 8:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText08" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="21-March-2018  (06:30 pm onwards)" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 9:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText09" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="“ Madhuli Hall ”" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 10:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText10" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="New cinema, onyx avenue near cross road" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Text 11:" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/editText11" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="Rajkot- 3300026" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/pdf_image" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:id="@+id/btnLL" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="20dp" android:layout_below="@+id/progressBar" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <Button android:textColor="#ffffff" android:id="@+id/cancelButton" android:background="@drawable/rounded_corner2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Back" android:layout_weight="1"/>
+                <Button android:textColor="#ffffff" android:id="@+id/okButton" android:background="@drawable/rounded_corner" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Generate" android:layout_weight="1" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

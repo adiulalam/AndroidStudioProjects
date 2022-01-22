@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/llTitleWeekContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek1" android:text="@string/sun" style="@style/WeekDayTitleStyle"/>
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek2" android:text="@string/mon" style="@style/WeekDayTitleStyle"/>
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek3" android:text="@string/tue" style="@style/WeekDayTitleStyle"/>
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek4" android:text="@string/wed" style="@style/WeekDayTitleStyle"/>
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek5" android:text="@string/thu" style="@style/WeekDayTitleStyle"/>
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek6" android:text="@string/fri" style="@style/WeekDayTitleStyle"/>
+    <com.archit.calendardaterangepicker.customviews.CustomTextView android:tag="dayOfWeek7" android:text="@string/sat" style="@style/WeekDayTitleStyle"/>
+</LinearLayout>

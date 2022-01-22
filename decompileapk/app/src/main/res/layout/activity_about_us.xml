@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f5f7f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar_home"/>
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp">
+                <TextView android:textSize="21.7sp" android:textStyle="bold" android:textColor="@color/txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="About Us" android:fontFamily="@font/roboto_italic"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/walkthrough_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="We provide easy and user friendly interface to create marriage biodata in just few clicks." android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/walkthrough_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="This Muslim Marriage Biodata Builder app quickly creates your bio data according to select your optional and mandatory fields and if you want to email your bio data just save your bio data in PDF and email it." android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

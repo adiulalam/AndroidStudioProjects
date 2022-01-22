@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.3dp" android:layout_marginTop="11.7dp" android:layout_marginRight="8.3dp" android:layout_marginBottom="11.7dp" app:cardBackgroundColor="@color/white">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView android:layout_width="59.7dp" android:layout_height="59.7dp" android:layout_marginLeft="11.7dp" android:layout_marginTop="17.7dp" android:layout_marginRight="17dp" android:layout_marginBottom="17.7dp" android:src="@drawable/ic_baseline_person_24"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="15sp" android:textColor="@color/txt_color" android:id="@+id/full_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Guest" android:fontFamily="@font/roboto_regular"/>
+                <TextView android:textSize="12.7sp" android:textColor="#8f909e" android:id="@+id/mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="9891239110"/>
+                <TextView android:textSize="12.7sp" android:textColor="#8f909e" android:id="@+id/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="john@doe.com"/>
+                <TextView android:textSize="12.7sp" android:textColor="#8f909e" android:id="@+id/country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="India"/>
+                <TextView android:textSize="12.7sp" android:textColor="#8f909e" android:id="@+id/state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="West Bengal"/>
+                <TextView android:textSize="12.7sp" android:textColor="#8f909e" android:id="@+id/pincode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="711106"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="10dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.7dp" android:src="@mipmap/ic_launcher"/>
+    <TextView android:textSize="12.7sp" android:textColor="#8f909e" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/app_name"/>
+</LinearLayout>

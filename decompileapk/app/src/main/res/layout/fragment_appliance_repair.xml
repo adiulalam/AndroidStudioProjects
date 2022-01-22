@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.CardView android:id="@+id/CardReview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" app:cardCornerRadius="0dp">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/gradient_rect" android:padding="11.7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_star3"/>
+            <TextView android:textSize="18.3sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="4.5" android:fontFamily="@font/roboto_bold"/>
+            <TextView android:textSize="13.3sp" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="1000+ Happy Customers" android:layout_weight="1" android:fontFamily="@font/roboto_regular"/>
+            <ImageView android:layout_gravity="center" android:layout_width="18dp" android:layout_height="15dp" android:src="@drawable/ic_right_arrow3"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v4.widget.NestedScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerview" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:background="#f5f7f8" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp">
+                <TextView android:textSize="21.7sp" android:textStyle="bold" android:textColor="@color/txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Why Rapid?" android:fontFamily="@font/roboto_italic"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/ic_verified_professionals"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/walkthrough_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Verified Professionals" android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/ic_service_guarantee"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/walkthrough_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="30 days Service Guarantee" android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="20dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/ic_on_time"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/walkthrough_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="On Time Arrival" android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

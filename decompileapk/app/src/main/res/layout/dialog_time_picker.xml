@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="200dp">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlTimePickerContainer" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.archit.calendardaterangepicker.customviews.CustomTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/default_date_color" android:id="@+id/tvHeaderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_time_picker" android:layout_centerHorizontal="true"/>
+        <com.archit.calendardaterangepicker.customviews.CustomTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/default_date_color" android:id="@+id/tvHeaderCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel"/>
+        <com.archit.calendardaterangepicker.customviews.CustomTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/default_date_color" android:id="@+id/tvHeaderDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlTimePickerContainer">
+        <TimePicker android:id="@+id/timePicker" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

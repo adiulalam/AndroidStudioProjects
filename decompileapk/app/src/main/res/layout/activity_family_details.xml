@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="52dp" android:minHeight="?attr/actionBarSize">
+        <Button android:textColor="#ffffff" android:layout_gravity="start" android:background="@drawable/family" android:layout_width="25dp" android:layout_height="25dp" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="end" android:id="@+id/next" android:background="@drawable/ic_baseline_arrow_back" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="15dp" android:rotation="180" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/hint_family_details"/>
+    </Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_grand_father_name"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_grand_father_name" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_grand_mother_name"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_grand_mother_name" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="@string/hint_fathers_name"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_father_name" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_fathers_occupation"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_fathers_occupation" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="@string/hint_mothers_name"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_mother_name" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_mothers_occupation"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_mothers_occupation" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_siblings"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_total_brothers" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="number"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_siblings_details"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_married_brothers" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:text="" android:hint="" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_total_sisters"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_total_sisters" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:text="" android:hint="" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_parental_uncle_aunt_details"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_parental_uncle_aunt" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:text="" android:hint="" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_maternal_uncle_aunt_details"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_maternal_uncle_aunt" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:text="" android:hint="" android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_parents_contact_number"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_parents_contact_number" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="text"/>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:text="@string/hint_partner_expectations"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_input_margin_bottom">
+                <EditText android:id="@+id/input_partner_expectations" android:background="@drawable/green_round_border" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="" android:hint="" android:inputType="textCapWords"/>
+            </LinearLayout>
+            <Button android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:textColor="#ffffff" android:layout_gravity="start" android:id="@+id/back" android:background="@color/colorPrimary" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/hint_previous" android:drawableLeft="@drawable/ic_baseline_arrow_back"/>
+            <Button android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:textColor="#ffffff" android:layout_gravity="end" android:id="@+id/next2" android:background="@color/colorPrimary" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-48dp" android:text="@string/hint_next" android:drawableRight="@drawable/ic_baseline_arrow_forward"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.7dp" android:layout_marginTop="17.3dp" android:layout_marginRight="16.7dp" android:layout_marginBottom="17.3dp">
+        <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15sp" android:textColor="@color/walkthrough_txt" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.7dp" android:text="Beauty &amp; Spa" android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+    <View android:background="@color/view_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="8.3dp" android:layout_marginRight="8.3dp"/>
+</LinearLayout>
